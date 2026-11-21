@@ -1,0 +1,40 @@
+Signal: HeaviSine
+N = 1024
+L = 3
+SNRtarget = 7
+M = 500
+sigmaTrue = 1 (simulation generation only)
+C_mean = 45, alpha_mean = 1.45
+C_med = 35, alpha_med = 1.25
+C_spom_G = 100, alpha_spom = 1.1, gamma_G = 1.31638442387
+PSP practical-null standardized radius = 1
+
+Method                      	            AMSE	          SD_MSE
+G_CauCauMean                	   0.05222938684	  0.009906274828
+G_CauCauMedian              	    0.0506537896	   0.01179339455
+G_CauCauSPoM                	   0.05796288841	   0.01557068727
+G_CauCauPSP                 	   0.05562803007	   0.01203786303
+DEvm_CauCauMean             	   0.04912107518	   0.00735504546
+DEvm_CauCauMedian           	   0.04452771787	   0.00849954854
+DEvm_CauCauPSP              	   0.04779578617	  0.008217549441
+BAMS                        	   0.05415575538	   0.01162567417
+EBayesMed                   	   0.04691155568	   0.01115556012
+RaisedCosineBayes           	   0.04453130539	  0.008121673582
+EpanechnikovBayes           	   0.04172570643	  0.006894310718
+SmoothSCAD                  	   0.06418077595	   0.01216450988
+NCPmean_2                   	   0.05725781003	   0.02191396539
+LNWSMean                    	   0.04582928715	  0.008865410077
+SureShrink                  	   0.06242873833	   0.02196386415
+BayesShrink                 	   0.04349797771	  0.009318227198
+SendurSelesnick             	   0.06816343692	   0.01523802701
+
+Universal MAD hard threshold reference (not method 18):
+lambda_U = sigmaHat*sqrt(2*log(N))
+AMSE_Universal = 0.08623550632
+SD_MSE_Universal = 0.01331960482
+
+PAIRED G vs DE (DEminusG < 0 favors DE)
+Rule        	        AMSE_G	    AMSE_DE_VM	      DEminusG	          MCSE
+Mean        	 0.05222938684	 0.04912107518	-0.00310831166	0.000218584181
+Median      	  0.0506537896	 0.04452771787	-0.006126071729	0.0002990755058
+PSP         	 0.05562803007	 0.04779578617	-0.007832243894	0.0002933606832

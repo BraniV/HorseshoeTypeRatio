@@ -1,0 +1,40 @@
+\begin{table}[thb]
+\centering
+\caption{Average mean squared error (AMSE) over $M=1000$ replications,
+$N=1024$, root SNR $=5$, estimated $\sigma$. Ranks among the seventeen
+rules are in parentheses; the smallest AMSE for each signal is in bold.
+Monte Carlo standard errors of the AMSEs are at most $0.0023$ (at most
+$0.0048$ for VisuShrink). Rules other than the two Cauchy/Cauchy
+variants are ordered by mean rank. $^{\ast}$Non-Bayesian rule.}
+\label{tab:dj_amse}
+\small
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}l r@{\,}l r@{\,}l r@{\,}l r@{\,}l c@{}}
+\toprule
+Rule & \multicolumn{2}{c}{Blocks} & \multicolumn{2}{c}{Bumps}
+     & \multicolumn{2}{c}{Doppler} & \multicolumn{2}{c}{HeaviSine}
+     & Mean rank\\
+\midrule
+
+
+Cau/Cau posterior mean, MMLE $\tau_j$ & 0.1196 & (5) & 0.2923 & (2) & 0.1652 & (6) & \textbf{0.0549} & (1) & 3.50 \\
+Cau/Cau posterior mean, fixed $\tau_j$ & 0.1109 & (2) & 0.3209 & (9) & 0.1620 & (4) & 0.0623 & (10) & 6.25 \\
+\midrule
+BAMS & \textbf{0.1099} & (1) & 0.3270 & (10) & 0.1643 & (5) & 0.0575 & (4) & 5.00 \\
+Horseshoe posterior mean, MMLE $\tau_j$ & 0.1248 & (7) & 0.2997 & (5) & 0.1689 & (7) & 0.0581 & (5) & 6.00 \\
+NCPmean ($m=2$) & 0.1610 & (12) & \textbf{0.2727} & (1) & 0.1473 & (3) & 0.0606 & (8) & 6.00 \\
+$\Lambda$-neighborhood (LNWS) & 0.1330 & (10) & 0.2931 & (4) & \textbf{0.1250} & (1) & 0.0701 & (12) & 6.75 \\
+EBayesThresh, posterior median & 0.1233 & (6) & 0.3139 & (7) & 0.1761 & (10) & 0.0591 & (6) & 7.25 \\
+BayesThresh, posterior median & 0.1147 & (3) & 0.3353 & (11) & 0.1946 & (13) & 0.0558 & (2) & 7.25 \\
+EBayesThresh, posterior mean & 0.1329 & (9) & 0.3062 & (6) & 0.1702 & (8) & 0.0595 & (7) & 7.50 \\
+Bivariate shrinkage (BiShrink) & 0.1982 & (14) & 0.2926 & (3) & 0.1257 & (2) & 0.0846 & (15) & 8.50 \\
+Raised-cosine Bayes & 0.1166 & (4) & 0.3800 & (12) & 0.2021 & (15) & 0.0615 & (9) & 10.00 \\
+Smooth SCAD--SURE$^{\ast}$ & 0.1257 & (8) & 0.3141 & (8) & 0.1852 & (11) & 0.0740 & (13) & 10.00 \\
+Epanechnikov Bayes & 0.1497 & (11) & 0.5089 & (15) & 0.1862 & (12) & 0.0572 & (3) & 10.25 \\
+SureShrink$^{\ast}$ & 0.1956 & (13) & 0.3983 & (13) & 0.2011 & (14) & 0.0821 & (14) & 13.50 \\
+BayesShrink & 0.2948 & (15) & 0.4335 & (14) & 0.2331 & (16) & 0.0633 & (11) & 14.00 \\
+BlockJS$^{\ast}$ & 0.4330 & (16) & 0.5977 & (16) & 0.1752 & (9) & 0.1137 & (16) & 14.25 \\
+VisuShrink$^{\ast}$ & 0.7252 & (17) & 1.7262 & (17) & 0.6468 & (17) & 0.1985 & (17) & 17.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

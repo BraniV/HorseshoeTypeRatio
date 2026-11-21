@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript if you use this software."
+title: "Horseshoe-Type Shrinkage from Ratio-Generated Priors"
+type: software
+authors:
+  - family-names: Kulkarni
+    given-names: Radhika
+  - family-names: DasGupta
+    given-names: Anirban
+  - family-names: Vidakovic
+    given-names: Brani

@@ -1,0 +1,9 @@
+signal,horseshoe_grid,mean_mse_difference,paired_mcse,fraction_lower_mse
+Blocks,standard,-0.0051526983,0.0000774411,0.992
+Blocks,wide,-0.0086163238,0.0000759965,1.000
+Bumps,standard,-0.0074437498,0.0001094938,0.987
+Bumps,wide,-0.0087153776,0.0000990632,0.999
+Doppler,standard,-0.0036389519,0.0000835601,0.924
+Doppler,wide,-0.0048086853,0.0000815269,0.985
+HeaviSine,standard,-0.0031935850,0.0000784267,0.911
+HeaviSine,wide,-0.0013266375,0.0000627477,0.752

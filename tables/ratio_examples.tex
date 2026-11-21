@@ -1,0 +1,55 @@
+\begin{table}[htbp]
+\centering
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}
+>{\raggedright\arraybackslash}p{0.25\textwidth}
+>{\raggedright\arraybackslash}p{0.23\textwidth}
+>{\raggedright\arraybackslash}p{0.21\textwidth}
+>{\raggedright\arraybackslash}p{0.21\textwidth}@{}}
+\hline
+Numerator $X$ & Denominator $Y$ & Behavior at the origin & Tail behavior \\ \hline
+$N(0,\tau^2)$
+& $C^+(0,1)$
+& logarithmic singularity
+& Cauchy order; classical horseshoe \\
+$N_p(0,\tau^2\Sigma)$
+& $C(0,1)$
+& logarithmic for $p=1$; $\pi(re)\asymp r^{1-p}$ for $p>1$
+& radial survival of order $r^{-1}$; shared-scale block prior \\
+${\rm Unif}(-\tau,\tau)$
+& $C(0,1)$
+& logarithmic singularity
+& Cauchy order; prior of \citet{Bhadra2021} \\
+$N(0,\tau^2)$
+& Double Pareto$(\alpha)$
+& power singularity for $0<\alpha<1$; logarithmic at $\alpha=1$; finite for $\alpha>1$
+& Cauchy-order tail \\
+$N(0,\tau^2)$
+& $1/\lambda$,~ $\lambda^2\sim\beta'(a,b)$
+& power singularity for $a<1/2$; logarithmic at $a=1/2$; finite for $a>1/2$
+& survival order $r^{-2b}$; normal--beta prime prior of \citet{BaiGhosh2019, BaiGhosh2021} \\
+$t_\nu(0,\tau)$
+& $t_\nu(0,1)$, $0<\nu\leq1$
+& power singularity for $0<\nu<1$; logarithmic at $\nu=1$
+& survival order $r^{-\nu}$ for $0<\nu<1$; $(\log r)/r$ for $\nu=1$ \\
+$\tau S_1U^{1/c}$, $U\sim{\rm Ga}(a,1)$
+& $S_2V^{1/c}$, $V\sim{\rm Ga}(b,1)$
+& numerator-generated singularity if $ac<1$
+& Cauchy order when $bc=1$ \\
+$C(0,\tau)$
+& $C(0,1)$
+& logarithmic singularity
+& density $\asymp(\log|\theta|)/\theta^2$ \\ \hline
+\end{tabular}
+\caption{Representative ratio-generated priors. Entries refer to the
+scalar case unless stated otherwise. In the normal--beta prime row,
+$\beta'(a,b)$ denotes the beta prime distribution with density
+$x^{a-1}(1+x)^{-(a+b)}/B(a,b)$, $x>0$. In the signed Gamma-power row,
+$a,b,c>0$, and $S_1,S_2$ are independent Rademacher variables,
+independent of $U,V$. The Double Pareto density is
+$g_\alpha(y)=\frac12(1+|y|/\alpha)^{-(\alpha+1)}$. Cauchy order means
+radial survival proportional to $r^{-1}$, up to any indicated slowly
+varying factor.}
+\label{tab:ratio_examples}
+\end{table}
